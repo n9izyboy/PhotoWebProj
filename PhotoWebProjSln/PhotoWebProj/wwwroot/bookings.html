@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Session | LensCraft Photography</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="sub-hero">
+    <nav class="nav">
+      <h1>LensCraft</h1>
+      <ul>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="bookings.html" aria-current="page">Bookings</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h2>Book Your Photography Session</h2>
+      <p>Select date, time, and duration to secure your slot.</p>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="booking-layout">
+      <section class="booking-panel">
+        <h3>Booking Details</h3>
+        <form id="bookingForm">
+          <input id="customerName" type="text" placeholder="Full Name" required />
+          <input id="customerEmail" type="email" placeholder="Email Address" required />
+
+          <label for="bookingDate">Date</label>
+          <input id="bookingDate" type="date" required />
+
+          <label for="bookingDuration">Duration</label>
+          <select id="bookingDuration" required>
+            <option value="">Select duration</option>
+            <option value="30">30 minutes</option>
+            <option value="60">1 hour</option>
+            <option value="90">1 hour 30 minutes</option>
+            <option value="120">2 hours</option>
+          </select>
+
+          <label for="bookingTime">Time</label>
+          <select id="bookingTime" required>
+            <option value="">Select time</option>
+          </select>
+
+          <button type="submit" class="btn">Book & Secure Slot</button>
+        </form>
+        <p id="bookingMessage" aria-live="polite"></p>
+      </section>
+
+      <section class="booking-panel">
+        <h3>Available Time Slots</h3>
+        <p class="muted">Choose a date first. Booked times are removed from available schedule.</p>
+        <ul id="slotList" class="slot-list"></ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 LensCraft Photography</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

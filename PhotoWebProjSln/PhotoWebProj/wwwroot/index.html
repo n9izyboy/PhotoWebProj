@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LensCraft Photography</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <h1>LensCraft</h1>
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h2>Capturing moments that matter.</h2>
+      <p>Portrait • Wedding • Lifestyle</p>
+      <div class="hero-actions">
+        <a class="btn" href="#portfolio">View Work</a>
+        <a class="btn btn-outline" href="gallery.html">Open Gallery</a>
+        <a class="btn btn-outline" href="bookings.html">Book a Session</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="portfolio" class="section">
+      <h3>Featured Portfolio</h3>
+      <div class="grid">
+        <div class="card">Photo 1</div>
+        <div class="card">Photo 2</div>
+        <div class="card">Photo 3</div>
+        <div class="card">Photo 4</div>
+        <div class="card">Photo 5</div>
+        <div class="card">Photo 6</div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h3>About</h3>
+      <p>
+        I’m a photography artist focused on natural light, real emotion, and timeless editing.
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h3>Contact</h3>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Tell me about your shoot..." rows="5" required></textarea>
+        <button type="submit" class="btn">Send Inquiry</button>
+      </form>
+      <p id="formMessage" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 LensCraft Photography</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
